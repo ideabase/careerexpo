@@ -103,7 +103,6 @@ il/Outlook.com to display normal line spacing */
       outline:none; 
       text-decoration:none; 
       -ms-interpolation-mode: bicubic;
-      width: auto;
       max-width: 100%; 
       clear: both; 
       display: block;
@@ -250,9 +249,10 @@ il/Outlook.com to display normal line spacing */
     }
 
     .header img {
-        width: 250px;
+        width: 300px;
         height: auto;
         margin: 0 auto;
+        max-width: 100%;
     }
 
     .header a {
@@ -275,10 +275,11 @@ il/Outlook.com to display normal line spacing */
 
     .button {
         text-align: center;
-        width: 75%;
+        width: 80%;
         margin: 0 auto;
         background-color: #80a7b9;
         margin-top: 15px;
+        letter-spacing: 1px;
     }
 
     .button:hover {
@@ -298,7 +299,7 @@ il/Outlook.com to display normal line spacing */
         text-transform: uppercase;
     }
 
-    .cci-footer-connect {
+    .cci-footer-connect, .cci-footer-logo-container {
         width: 100%;
         padding: 0;
         margin: 0;
@@ -315,6 +316,12 @@ il/Outlook.com to display normal line spacing */
 
     .cci-footer-logo {
         padding-top: 25px;
+        padding-bottom: 15px;
+    }
+
+    .cci-footer-logo img {
+        margin: 0 auto;
+        text-align: center;
     }
 
     
@@ -375,7 +382,7 @@ il/Outlook.com to display normal line spacing */
         margin: 0 auto;
     }
 
-    .cci-footer-connect {
+    .cci-footer-connect, .cci-footer-logo-container {
         width: 90% !important;
         margin: 0 auto;
     }
@@ -413,7 +420,7 @@ il/Outlook.com to display normal line spacing */
 <tbody>
 <tr>
     <td class="header" colspan="2">
-        <img width="250" height="61" src="../../assets/img/expo-header.png" />
+        <img width="300" height="76" src="../../assets/img/expo-header.jpg" alt="College of Communication and Information CareerExpo16" />
     </td>
 </tr>
 </tbody>
@@ -422,7 +429,7 @@ il/Outlook.com to display normal line spacing */
 <tbody>
 <tr>
     <td class="feature-image" colspan="2">
-        <img width="600" height="400" src="../../assets/img/expo-feature-image.png" />  
+        <img width="600" alt="Bringing Students & Businesses Together" height="400" src="../../assets/img/student-feature-image.jpg" />  
     </td>
 </tr>
 </tbody>
@@ -434,7 +441,7 @@ il/Outlook.com to display normal line spacing */
         <table border="0" width="100%">
             <tbody>
                 <tr>
-                    <td style="padding: 5px 20px 10px 0px; position: relative;">
+                    <td>
                         <table class="button" border="0">
                             <tbody>
                                 <tr>
@@ -462,12 +469,12 @@ il/Outlook.com to display normal line spacing */
         <table width="100%" class="two-column-text">
             <tbody>
                 <tr>
-                    <td class="two-column-text-cell" width="50%"><p>Item 1</p></td>
-                    <td class="two-column-text-cell"><p>Item 2</p></td>
+                    <td class="two-column-text-cell" width="50%"><p>Communication Studies</p></td>
+                    <td class="two-column-text-cell"><p>Journalism and Mass Communication</p></td>
                 </tr>
                 <tr>
-                    <td class="two-column-text-cell" width="50%"><p>Item 3</p></td>
-                    <td class="two-column-text-cell"><p>Item 4</p></td>
+                    <td class="two-column-text-cell" width="50%"><p>Library and Information Science</p></td>
+                    <td class="two-column-text-cell"><p>Visual Communication Design</p></td>
                 </tr>
             </tbody>
         </table>
@@ -512,10 +519,10 @@ il/Outlook.com to display normal line spacing */
 </tr>
 <tr class="footer-row">
     <td class="wrapper">
-    <table class="cci-footer-connect">
+    <table class="cci-footer-logo-container">
     <tr>
         <td class="cci-footer-logo">
-            <p>Kent State Logo Goes Here</p>
+            <img width="100" alt="Kent State University" height="35" src="../../assets/img/KentLogo200px.jpg" />
         </td>
     </tr>
     </table>
