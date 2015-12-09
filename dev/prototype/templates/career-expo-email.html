@@ -122,10 +122,6 @@ il/Outlook.com to display normal line spacing */
       margin: 0 0 20px 0;
       font-size: 15px; 
     }
-    .center_paragraph{
-        margin: 0 auto;
-        width: 400px;
-    }
 
     table {
       border-spacing: 0;
@@ -139,25 +135,63 @@ il/Outlook.com to display normal line spacing */
       font-family: Arial, Helvetica, sans-serif;
     }
 
-    h4 {
-        margin: 10px 0 10px 0;
-    }
-    
-    h1{
+    h1 {
+        font-size: 25px;
         text-align: center;
-        font-size: 22px;
-        color:#1D3667;
+        color: orange;
+        text-transform: uppercase;
     }
-    h2{
+
+    h2 {
+        color: gray;
         text-align: center;
         font-size: 20px;
-        color: #1D3667;
+        line-height: 25px;
+        font-weight: normal;
     }
-    h3, h4{
-        text-align:left;
-        color: #1D3667;
+
+    h3 {
+        color: teal;
+        font-weight: bold;
+        font-size: 18px;
     }
-    
+
+    h4 {
+        color: orange;
+        font-size: 20px;
+        padding-bottom: 10px;
+    }
+
+    h5 {
+        color: green;
+        text-transform: uppercase;
+        font-size: 13px;
+    }
+
+    .mainFooter {
+        border-top: 1px solid gray;
+    }
+
+    .cci-footer-contact-data p {
+        font-size: 12px;
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+
+    .callout {
+        text-align: center;
+        text-transform: uppercase;
+        color: orange;
+        border-top: 1px solid gray;
+        border-bottom: 1px solid gray;
+        padding: 15px 0;
+    }
+
+    .two-column-text-cell p {
+        font-weight: bold;
+        color: teal;
+    }
+
     ul {
         list-style-position: inside;
         padding-left:0;
@@ -165,12 +199,6 @@ il/Outlook.com to display normal line spacing */
 
     ul, ol, li {
         font-size: 15px;
-    }
-    
-    hr{
-        background-color:#EDBB1C;
-        height: 5px; 
-        border: 0;
     }
     
     td { 
@@ -190,7 +218,7 @@ il/Outlook.com to display normal line spacing */
          width: 600px;
     }
 
-    .cci-header {
+    .header {
         text-align: center;
         background-size: 100% auto;
         padding: 20px;
@@ -206,31 +234,14 @@ il/Outlook.com to display normal line spacing */
         margin: 0 auto;
     }
 
-    .cci-header img {
+    .header img {
         width: 250px;
         height: auto;
         margin: 0 auto;
     }
 
-    .cci-header a {
+    .header a {
         display: inline-block;
-    }
-
-    .cci-footer {
-        background-color: #FFFFFF;
-        font-size: 12px;
-        padding-top: 25px;
-    }
-    .cci-footer b{
-        color: #1D3667;
-    }
-
-    .cci-footer p {
-        margin-bottom: 0;
-    }
-
-    .cci-footer h4 {
-        font-size: 13px;
     }
 
     p,li,ol {
@@ -247,52 +258,27 @@ il/Outlook.com to display normal line spacing */
         color: #1D3667;
     }
 
-    .cci-footer-contact {
-        width: 375px;
-        padding: 0;
-        margin: 0;
-    }
-
-    .cci-footer-connect {
-        width: 375px;
-        padding: 0;
-        margin: 0;
-    }
-    .cci-footer-connect img {
-        width: 25px;
-        display:inline;
-        padding: 2px;
-    }
-
-    .cci-info {
-        line-height: 150%;
-        color:white;
+    .button {
         text-align: center;
-        background-color:#1C3D73;
-    }
-    .cci-info b{
-        font-size: 20px;
-    }
-
-    .cci-info td {
-        padding: 40px;
+        width: 75%;
+        margin: 0 auto;
+        background-color: green;
+        margin-top: 15px;
     }
 
-    .cci-info p {
-        padding: 10px 40px 0px 40px;
-        text-align: left;
-        color: white; 
-        font-size: 8px; 
-        font-style: italic;
-    }
-
-    .cci-info a {
+    .button td {
+        padding: 15px 10px;
         color: white;
     }
 
-    .cci-footer-last {
-        padding: 10px 0 45px 0;
+    .button a {
+        color: white;
+        font-size: 20px;
+        font-weight: bold;
+        text-decoration: none;
+        text-transform: uppercase;
     }
+
     
 /* Global Elements from Luminate */
 
@@ -315,9 +301,7 @@ il/Outlook.com to display normal line spacing */
     table.emailstationery {
          width: 100% !important;
         }
-    .cci-header img {
-        width: 215px !important;
-        height: auto !important;
+    .header img {
     }
 
     p, ul, ol, li {
@@ -369,7 +353,9 @@ il/Outlook.com to display normal line spacing */
         text-align: center; 
         margin-bottom: 20px;
          font-family: Arial, Helvetica, sans-serif; 
-        font-size: 14px; color: #333; 
+        font-size: 12px; color: #333; 
+        width: 90%;
+        margin: 0 auto;
         margin-top: 10px;
     }
 }
@@ -378,133 +364,111 @@ il/Outlook.com to display normal line spacing */
 <table class="emailstationery" border="0" cellspacing="0" cellpadding="0" align="center">
 <tbody>
 <tr>
-    <td class="cci-header" colspan="2">
-                    <a href="http://www.kent.edu/comm" target="_blank"><img width="300" style="margin: 0 auto;" height="100" src="../../assets/img/header_candid.png" alt="School of Communication Studies" /></a>
+    <td class="header" colspan="2">
+                    <a href="http://www.kent.edu/comm" target="_blank"><img src="../../assets/img/expo-header.png" /></a>
+
     </td>
-    <td>
 </tr>
 </tbody>
 </table>
-
+<table class="emailstationery" border="0" cellspacing="0" cellpadding="0" align="center">
+<tbody>
+<tr>
+    <td class="feature-image" colspan="2">
+        <img src="../../assets/img/expo-feature-image.png" />  
+    </td>
+</tr>
+</tbody>
+</table>
 <table class="mainBody" align="center">
 <tr>
     <td class="bodyContent" colspan="2">
-        <img src="../../assets/img/subheader_candid.png"/>
-        <h2 style="text-align:center"><i>Friday, Oct. 30th, 2015</i></h2>
-        
-        
-        <h1>Students, Administrators from Sichuan University in China Visit College</h1>
-        <p>
-            
-        <img src="../../assets/img/group_picture.png" style="width: 215px !important;
-        height: auto !important; float:left; vertical-align:middle; margin-right: 20px; margin-top: 20px;"/>  
-            
-        Students and faculty from the College of Literature and Journalism of Sichuan University in Chengdu, China, are rising the College           of Communication and Information. The representatives have toured the university’s Kent campus, met with the CCI Dean Amy Reynolds,         Ph.D., and sat in on classes in the School of Communication Studies and the School of Journalism and Mass Communications.
-        
-        <br/> <a style="float:right;">Read More</a><br/>
-        </p>
-        <hr> 
-
-        <h1>Points of Pride</h1>
-        <p>
-            An article by SLIS Assistant Professor Marianne Martens, Ph.D., “Gaming the Reading Experience: Book-related Social Spaces for               Young Children,” was published in the special issue of Digital Youth 2(4), p. 29-40, in September 2015. The idea for this peer-             reviewed, special issue on Digital Youth came out of the digital Youth Research Network, which has held pre-conference workshops             at the Conference over the last three years.
-            
-             <img src="../../assets/img/book_room.png" style="width: 600px !important;
-        height: auto !important;  vertical-align:middle; margin-right: 20px; margin-top: 20px; margin-bottom: 20px;"/>  
-        </p>
-        
-        <h1>Students/Alumni Success</h1>
-        <p>
-        SLIS alumnus Alfred Bernardo, M.L.I.S. ’15, has accepted a position as the user services librarian at the Allen Memorial Library at         Valley City State University in Valley City, N.D. SLIS user experience design (UXD) student Tasha Malkovich was on the third place           team at the Cleveland Medical Hackathon in September 2015. Malkovich was a design thinker and developer on their Watershed Health           Project, which examined the Cuyahoga County Board of Health paper-based process o monitoring water quality to prevent the                   transmission of waterborne diseases. 
-        </p>
-
-        <hr>
-    
-        <h1>News</h1>
-        
-        <h3>Tiger Legacy: Kent State Professors Turn Long-Term Storytelling Project Into Educational Opportunity</h3>
-
-        <p>
-            
-        An article by SLIS Assistant Professor Marianne Martens, Ph.D., “Gaming the Reading Experience: Book-related Social Spaces for Young         Children,” was published in the special issue of Digital Youth 2(4), p. 29-40, in September 2015. The idea for this peer-reviewed,           special issue on Digital Youth came out of the digital Youth Research Network, which has held pre-conference workshp[s at the               Conference over the last three years.
-
-        <br/> <a style="float:right;">Read More</a><br/>
-        </p>
-        <hr>
-        
-        <h1>Important Dates</h1>
-        <p class="center_paragraph" >
-        <b>Global Communication Issues Forum on the refugee Crisis in the Middle East and Europe</b><br/>
-        Featuring Emily Feldman, a Pulitzer Center journalist<br/>
-        7:30 p.m. Tuesday, Oct. 20<br/>
-        Kent Student Center Ballroom<br/>
-        <br/>
-    
-        <b>Global Communication Issues Forum on the refugee Crisis in the Middle East and Europe</b><br/>
-        Featuring Emily Feldman, a Pulitzer Center journalist<br/>
-        7:30 p.m. Tuesday, Oct. 20<br/>
-        Kent Student Center Ballroom<br/>
-
-        </p>
-    </td>
-</tr>
-
-<tr class="cci-info">
-    <td>
-        <b>Credits / Contact</b><br/><br/>
-        
-        Meghan Caprez, Managing Editor - College of Communication and Information<br/>
-        Kent State University | 330-672-1960 | mcaprez@kent.edu<br/><br/>
-        <p>
-        Contact us with comments or suggestions at ccikent@kent.edu. Special thank to CCI Kent State marketing assistant Amanda Azzarelli,           Morgan Barba, Erica Batyko, Eline Concepcion, Anna Hoffman, Patrick Hogan, Alex Ledet and Gabrielle Woodard for contributing to this         publication. To reach the team, email ccikent@kent.edu or visit the marketing team Web page.
-        </p>
+        <!-- Start Code for CTA -->
+        <table border="0" width="100%">
+            <tbody>
+                <tr>
+                    <td style="padding: 5px 20px 10px 0px; position: relative;">
+                        <table class="button" border="0">
+                            <tbody>
+                                <tr>
+                                    <td>
+                                    <a href="#">This is the Call to Action</a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <!-- End Code for CTA -->
+        <h1>Friday, March 4, 2016 | 1 – 4 P.M.</h1>
+        <h2>Location: Grand Ballroom C, Cleveland Convention Center Registration for CareerExpo16 is free. Bus transportation to and from Cleveland is provided.</h2>
+        <h3>Dear Student,</h3>
+        <p>Join us this March 4th for the fourth annual Career Expo. Kent State University College of Communica- tion and Information’s (CCI) 2016 CareerExpo, brings together a wide range of businesses and organi- zations in and near Northeast Ohio.</p>
+        <p class="callout">Registration Is Free.</p>
+        <p>CareerExpo2015 provides a career forum for juniors, seniors and graduate students from schools in the College of Communication and Information to meet with prospective employers for internships, careers and employment.</p>
+        <p>CareerExpo2015 features career discussions, internship and job opportunities from the top businesses and organizations in and near Northeast Ohio.</p>
+        <p>Students from these CCI schools will attend:</p>
+        <!--Start 2 Column Layout -->
+        <table width="100%" class="two-column-text">
+            <tbody>
+                <tr>
+                    <td class="two-column-text-cell" width="50%"><p>Item 1</p></td>
+                    <td class="two-column-text-cell"><p>Item 2</p></td>
+                </tr>
+                <tr>
+                    <td class="two-column-text-cell" width="50%"><p>Item 3</p></td>
+                    <td class="two-column-text-cell"><p>Item 4</p></td>
+                </tr>
+            </tbody>
+        </table>
+        <h4>Read what previous attendees had to say about the CareerExpo</h4>
+        <p>“The CareerExpo is a great opportunity for students to learn about different opportunities with the agencies and organizations in the area, network with professionals and, hopefully, make connections that lead to a job.” —Megan Confer</p>
+        <p>“It was like having 30 mini-interviews in one afternoon. It helped me  gure out what to say and, also, gave me an idea of what kind of questions employers ask. And I got a job.” —Jake Corcoran</p>
     </td>
 </tr>
 </tbody>
 </table>
-
 <table class="mainFooter" align="center">
 <tbody>
 <tr class="footer-row">
     <td class="wrapper">
     <table class="cci-footer-contact">
     <tr>
-        
-
-
-
-        <td class="cci-footer">
-            <h4>SCHOOL OF JOURNALISM AND MASS COMMUNICATION<br/>
-            SCHOOL OF COMMUNICATION STUDIES</h4>
-            <p><b>Phone:</b> 330-672-2950 | <b>Email:</b> ccikent@kent.edu<br/><br/>
-            <b>Website:</b> https://www.kent.edu/cci<br/>
-            <b>Mailing Address:</b> Kent State University 131 Moulton Hall P.O. Box 5190 Kent, OH 44240</p>
-            
+        <td class="cci-footer-contact-data">
+            <h5>Contact Information</h5>
+            <p>JOHN BUTTE</p>
+            <p><span>Phone:</span> 216.650.2258 | <span>Email:</span> jbutte@kent.edu</p>
+            <p>School of Journalism and Mass Communication</p>
         </td>
     </tr>
     </table>
     </td>
 </tr>
-</tbody>
-</table>
-<table class="mainFooter" align="center">
-<tbody>
 <tr class="footer-row">
     <td class="wrapper">
     <table class="cci-footer-connect">
-        <tr>
-            <td class="cci-footer cci-footer-last">
-                <h4>CONNECT WITH US</h4>
-                <a href="https://www.facebook.com/kentcommstudies"><img alt="Facebook" width="25" height="25" src="https://secure2.convio.net/ksu/images/content/pagebuilder/facebook11974.png"/></a>
-                <a href="https://twitter.com/kentCommStudies"><img alt="Twitter" width="25" height="25" src="https://secure2.convio.net/ksu/images/content/pagebuilder/twitter11978.png"/></a>
-                <a href="https://www.linkedin.com/grp/home?gid=4656082"><img alt="LinkedIn" width="25" height="25" src="https://secure2.convio.net/ksu/images/content/pagebuilder/linkedin11975.png"/></a>
-                <a href="https://www.flickr.com/photos/kentcommstudies"><img alt="Flickr" width="25" height="25" src="https://secure2.convio.net/ksu/images/content/pagebuilder/flickr11980.png"/></a>
-            </td>
-        </tr>
+    <tr>
+        <td class="cci-footer-contact-data">
+            <h5>Connect with Us</h5>
+            <p>Social Icons</p>
+        </td>
+    </tr>
     </table>
     </td>
 </tr>
-
+<tr class="footer-row">
+    <td class="wrapper">
+    <table class="cci-footer-connect">
+    <tr>
+        <td class="cci-footer-logo">
+            <p>Kent State Logo Goes Here</p>
+        </td>
+    </tr>
+    </table>
+    </td>
+</tr>
 </tbody>
 </table>
 <!-- Anything below will be automatically entered by Luminate -->
