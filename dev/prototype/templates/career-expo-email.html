@@ -8,14 +8,14 @@
     <meta name="description" content="Page Description Goes Here">
   </head>
 <body>
-
-<style type="text/css">
     <!--[if gte mso 9]><xml>
 <o:OfficeDocumentSettings>
   <o:AllowPNG/>
   <o:PixelsPerInch>96</o:PixelsPerInch>
 </o:OfficeDocumentSettings>
 </xml><![endif]-->
+
+<style type="text/css">
 
 .ReadMsgBody, .ExternalClass { width:100%; } /* Force Hotmail/Outlook.com t=
 o display emails at full width */ =20
@@ -132,38 +132,42 @@ il/Outlook.com to display normal line spacing */
       word-break: normal;
       hyphens: none;
       margin: 25px 0 10px 0;
-      font-family: Arial, Helvetica, sans-serif;
+      font-family: Helvetica, Arial, sans-serif;
     }
 
     h1 {
         font-size: 25px;
         text-align: center;
-        color: orange;
+        color: #f37535;
         text-transform: uppercase;
     }
 
     h2 {
         color: gray;
         text-align: center;
-        font-size: 20px;
+        font-size: 18px;
         line-height: 25px;
         font-weight: normal;
+        margin-top: 0;
+        line-height: 27px;
     }
 
     h3 {
-        color: teal;
+        color: #6b8c9c;
         font-weight: bold;
         font-size: 18px;
     }
 
     h4 {
-        color: orange;
-        font-size: 20px;
+        color: #f37535;
+        font-size: 18px;
         padding-bottom: 10px;
+        line-height: 25px;
+        padding-top: 10px;
     }
 
     h5 {
-        color: green;
+        color: #879637;
         text-transform: uppercase;
         font-size: 13px;
     }
@@ -171,25 +175,37 @@ il/Outlook.com to display normal line spacing */
     .mainFooter {
         border-top: 1px solid gray;
     }
+    
+    .cci-footer-contact, .cci-footer-connect {
+        text-align: center;
+    }
+
 
     .cci-footer-contact-data p {
         font-size: 12px;
+        line-height: 20px;
         margin-bottom: 0;
         padding-bottom: 0;
+    }
+
+    .cci-footer-contact-data span {
+        color: #6b8c9c;
+        font-weight: bold;
     }
 
     .callout {
         text-align: center;
         text-transform: uppercase;
-        color: orange;
+        color: #f37535;
         border-top: 1px solid gray;
         border-bottom: 1px solid gray;
         padding: 15px 0;
+        font-weight: bold;
     }
 
     .two-column-text-cell p {
         font-weight: bold;
-        color: teal;
+        color: #6b8c9c;
     }
 
     ul {
@@ -220,17 +236,16 @@ il/Outlook.com to display normal line spacing */
 
     .header {
         text-align: center;
-        background-size: 100% auto;
         padding: 20px;
     }
 
     .mainBody {
-        width: 600px;
+        width: 550px;
         margin: 0 auto;
     }
 
     .mainFooter {
-        width: 600px;
+        width: 550px;
         margin: 0 auto;
     }
 
@@ -245,14 +260,14 @@ il/Outlook.com to display normal line spacing */
     }
 
     p,li,ol {
-        color:#58585B;
+        color:#6b6c71;
         font-family:Helvetica, Arial, sans-serif;
         line-height:150%;
     }
 
     .bodyContent {
          padding-top: 10px !important;
-         padding-bottom: 40px;
+         padding-bottom: 20px;
     }
     .bodyContent b{
         color: #1D3667;
@@ -262,8 +277,12 @@ il/Outlook.com to display normal line spacing */
         text-align: center;
         width: 75%;
         margin: 0 auto;
-        background-color: green;
+        background-color: #80a7b9;
         margin-top: 15px;
+    }
+
+    .button:hover {
+        background-color: #60899c;
     }
 
     .button td {
@@ -279,6 +298,25 @@ il/Outlook.com to display normal line spacing */
         text-transform: uppercase;
     }
 
+    .cci-footer-connect {
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+    .cci-footer-connect img {
+        width: 25px;
+        display:inline;
+        padding: 2px;
+    }
+
+    .cci-footer-contact a {
+        color: #58585B;
+    }
+
+    .cci-footer-logo {
+        padding-top: 25px;
+    }
+
     
 /* Global Elements from Luminate */
 
@@ -289,10 +327,11 @@ il/Outlook.com to display normal line spacing */
 
     #footer {
         text-align: center; 
-        margin-bottom: 20px;
-        font-family: Arial, Helvetica, sans-serif; 
+        padding-bottom: 20px;
+        font-family: Helvetica, Arial, sans-serif; 
         font-size: 12px; color: #333; 
         margin-top: 10px;
+        display: block;
     }
 
 @media only screen and (max-width: 600px) {
@@ -301,11 +340,14 @@ il/Outlook.com to display normal line spacing */
     table.emailstationery {
          width: 100% !important;
         }
-    .header img {
-    }
 
     p, ul, ol, li {
-        font-size: 16px;
+        font-size: 16px !important;
+    }
+
+    .cci-footer-contact-data p {
+        font-size: 12px !important;
+        line-height: 20px !important;
     }
 
     .wrapper {
@@ -325,20 +367,26 @@ il/Outlook.com to display normal line spacing */
     }
 
     .cci-footer {
-        font-size: 13px !important;
-        padding-top: 25px;
+        padding-top: 5px;
     }
 
     .cci-footer-contact {
         width: 90% !important;
+        margin: 0 auto;
     }
 
     .cci-footer-connect {
         width: 90% !important;
+        margin: 0 auto;
     }
 
 
 /* Global Elements from Luminate */
+
+
+#cv-poweredBy {
+    margin-bottom: 20px;
+}
 
     #cv-poweredBy img {
                 width: 88px!important;
@@ -352,7 +400,7 @@ il/Outlook.com to display normal line spacing */
     #footer {
         text-align: center; 
         margin-bottom: 20px;
-         font-family: Arial, Helvetica, sans-serif; 
+         font-family: Helvetica, Arial, sans-serif; 
         font-size: 12px; color: #333; 
         width: 90%;
         margin: 0 auto;
@@ -365,8 +413,7 @@ il/Outlook.com to display normal line spacing */
 <tbody>
 <tr>
     <td class="header" colspan="2">
-                    <a href="http://www.kent.edu/comm" target="_blank"><img src="../../assets/img/expo-header.png" /></a>
-
+        <img width="250" height="61" src="../../assets/img/expo-header.png" />
     </td>
 </tr>
 </tbody>
@@ -375,7 +422,7 @@ il/Outlook.com to display normal line spacing */
 <tbody>
 <tr>
     <td class="feature-image" colspan="2">
-        <img src="../../assets/img/expo-feature-image.png" />  
+        <img width="600" height="400" src="../../assets/img/expo-feature-image.png" />  
     </td>
 </tr>
 </tbody>
@@ -403,7 +450,8 @@ il/Outlook.com to display normal line spacing */
         </table>
         <!-- End Code for CTA -->
         <h1>Friday, March 4, 2016 | 1 – 4 P.M.</h1>
-        <h2>Location: Grand Ballroom C, Cleveland Convention Center Registration for CareerExpo16 is free. Bus transportation to and from Cleveland is provided.</h2>
+        <h2>Location: Grand Ballroom C, Cleveland Convention Center</h2>
+        <h2>Registration for CareerExpo16 is free. Bus transportation to and from Cleveland is provided.</h2>
         <h3>Dear Student,</h3>
         <p>Join us this March 4th for the fourth annual Career Expo. Kent State University College of Communica- tion and Information’s (CCI) 2016 CareerExpo, brings together a wide range of businesses and organi- zations in and near Northeast Ohio.</p>
         <p class="callout">Registration Is Free.</p>
@@ -434,12 +482,12 @@ il/Outlook.com to display normal line spacing */
 <tbody>
 <tr class="footer-row">
     <td class="wrapper">
-    <table class="cci-footer-contact">
+    <table class="cci-footer-contact" width="600">
     <tr>
         <td class="cci-footer-contact-data">
             <h5>Contact Information</h5>
-            <p>JOHN BUTTE</p>
-            <p><span>Phone:</span> 216.650.2258 | <span>Email:</span> jbutte@kent.edu</p>
+            <strong><p>JOHN BUTTE</p></strong>
+            <p><span>Phone:</span> 216.650.2258 | <span>Email:</span> <a href="mailto:jbutte@kent.edu">jbutte@kent.edu</a></p>
             <p>School of Journalism and Mass Communication</p>
         </td>
     </tr>
@@ -448,14 +496,18 @@ il/Outlook.com to display normal line spacing */
 </tr>
 <tr class="footer-row">
     <td class="wrapper">
-    <table class="cci-footer-connect">
-    <tr>
-        <td class="cci-footer-contact-data">
-            <h5>Connect with Us</h5>
-            <p>Social Icons</p>
-        </td>
-    </tr>
-    </table>
+            <table class="cci-footer-connect" width="600">
+                <tr>
+                    <td class="cci-footer cci-footer-last">
+                        <h5>CONNECT WITH US</h5>
+                        <a href="https://www.facebook.com/KentStateJMC"><img alt="Facebook" width="25" height="25" src="https://secure2.convio.net/ksu/images/content/pagebuilder/facebook11974.png"/></a>
+                        <a href="https://twitter.com/kentstatejmc"><img alt="Twitter" width="25" height="25" src="https://secure2.convio.net/ksu/images/content/pagebuilder/twitter11978.png"/></a>
+                        <a href="https://www.youtube.com/user/KentStateJMC"><img alt="YouTube" width="25" height="25" src="https://secure2.convio.net/ksu/images/content/pagebuilder/youtube11979.png"/></a>
+                        <a href="https://www.linkedin.com/grps/Kent-State-Alumni-School-Journalism-1173927?trk=hb_side_g&gid=1173927"><img alt="LinkedIn" width="25" height="25" src="https://secure2.convio.net/ksu/images/content/pagebuilder/linkedin11975.png"/></a>
+                        <a href="https://www.flickr.com/photos/kentstatejmc"><img alt="Flickr" width="25" height="25" src="https://secure2.convio.net/ksu/images/content/pagebuilder/flickr11980.png"/></a>
+                    </td>
+                </tr>
+            </table>
     </td>
 </tr>
 <tr class="footer-row">
